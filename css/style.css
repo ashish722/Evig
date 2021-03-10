@@ -88,7 +88,7 @@ ul{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 #banner img{
     width: 100%;
@@ -131,6 +131,11 @@ ul{
     font-weight: 300;
     line-height: 35px;
     margin: 0;
+}
+.banner-content img{
+    width: 165px;
+    height: 78px;
+    object-fit: contain;
 }
 /* ================================================ */
 
