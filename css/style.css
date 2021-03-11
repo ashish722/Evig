@@ -36,9 +36,6 @@ ul{
     padding: 0;
     margin: 0;
 }
-.bg-black{
-    background: #000;
-}
 /* ================================================ */
 
 /* ================================================ */
@@ -210,19 +207,20 @@ ul{
 =================================================== */
 #footer{
     background: #121212;
-    position: relative;
-    z-index: 1;
-}
-.footer-bottom{
+    text-align: center;
     border-top: 1px solid;
     padding: 20px 0;
 }
 .email{
-    text-align: center;
+    margin: 0 0 8px;
 }
 .email a{
     color: #bbb;
     text-decoration: underline;
+}
+#footer p{
+    color: #bbb;
+    margin: 0;
 }
 /* ================================================ */
 
@@ -327,8 +325,15 @@ ul{
     font-size: 14px;
     line-height: 24px;
 }
-.footer-bottom{
+#footer{
     padding: 10px 0;
+}
+.email{
+    margin: 0 0 4px;
+}
+#footer p{
+    font-size: 14px;
 }
 }
 /* ================================================ */
+@2020 copyright Evigtech Pvt. Ltd.
