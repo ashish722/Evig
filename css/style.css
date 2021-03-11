@@ -2,12 +2,11 @@
 /\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\
 
     1.IMPORT
-    2.HEADER
-    3.BANNER
-    4.SECTION TITLE
-    5.SOLUTIONS
-    6.FOOTER
-    7.MEDIA QUERY
+    2.BANNER
+    3.SECTION TITLE
+    4.SOLUTIONS
+    5.FOOTER
+    6.MEDIA QUERY
 /*
 
 /* ================================================ */
@@ -40,41 +39,10 @@ ul{
 .bg-black{
     background: #000;
 }
-.mb-0{
-    margin-bottom: 0;
-}
 /* ================================================ */
 
 /* ================================================ */
-/* 2.HEADER
-=================================================== */
-.main-header{
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
-.main-header.fixed-header,
-.main-header.inner-header{
-    background: #000;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%);
-}
-.main-header .logo a{
-    display: inline-block;
-}
-.main-header .logo img{
-    max-width: 100%;
-    height: 60px;
-}
-.logo-black{
-    display: none;
-}
-/* ================================================ */
-
-/* ================================================ */
-/* 3.BANNER
+/* 2.BANNER
 =================================================== */
 #banner{
     overflow: hidden;
@@ -133,7 +101,7 @@ ul{
     margin: 0;
 }
 #banner .banner-content img{
-    width: 40%;
+    width: 25%;
     height: auto;
     object-fit: contain;
     object-position: center;
@@ -141,7 +109,7 @@ ul{
 /* ================================================ */
 
 /* ================================================ */
-/* 4.SECTION TITLE
+/* 3.SECTION TITLE
 =================================================== */
 .section-title{
     text-align: center;
@@ -152,7 +120,7 @@ ul{
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 0 15px;
+    margin: 0;
 }
 .section-title h2{
     color: #fff;
@@ -164,7 +132,7 @@ ul{
 /* ================================================ */
 
 /* ================================================ */
-/* 5.SOLUTIONS
+/* 4.SOLUTIONS
 =================================================== */
 #Solutions{
     background: #000;
@@ -199,7 +167,7 @@ ul{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .solution-item:hover:before{
     opacity: 0.7;
@@ -238,7 +206,7 @@ ul{
 /* ================================================ */
 
 /* ================================================ */
-/* 6.FOOTER
+/* 5.FOOTER
 =================================================== */
 #footer{
     background: #121212;
@@ -259,11 +227,11 @@ ul{
 /* ================================================ */
 
 /* ================================================ */
-/* 7.MEDIA QUERY
+/* 6.MEDIA QUERY
 =================================================== */
 @media only screen and (max-width: 991px){
 #Solutions{
-    padding: 60px 0 30px;
+    padding: 50px 0 20px;
 }
 #Solutions .section-title h2{
     margin: 0;
@@ -276,20 +244,20 @@ ul{
     font-size: 50px;
     line-height: 40px;
 }
+#banner .banner-content img{
+    width: 30%;
+}
 .solution-item.mb-0{
     margin: 0 0 30px;
 }
 }
 @media only screen and (max-width: 767px){
-.main-header{
-    padding: 10px 0;
-}
-.menu{
-    display: none;
+#Solutions{
+    padding: 25px 0 0;
 }
 .solution-item,
 .solution-item.mb-0{
-    margin: 0 40px 30px;
+    margin: 0 40px 25px;
 }
 #banner .banner-content{
     width: 90%;
@@ -304,8 +272,8 @@ ul{
 .banner-content p{
     line-height: 25px;
 }
-.fixed-header{
-    display: none;
+#banner .banner-content img{
+    width: 25%;
 }
 .section-title{
     margin: 0 0 25px;
@@ -314,27 +282,8 @@ ul{
     font-size: 25px;
     line-height: 33px;
 }
-.section-title p{
-    margin: 0 0 8px;
-}
-/* .solution-item:before{
-    opacity: 0.7;
-    transform: scale(1);
-}
-.solution-item .solution-description{
-    opacity: 1;
-} */
-.solution-item:after{
-    display: none;
-}
 }
 @media only screen and (max-width: 476px){
-.main-header{
-    padding: 5px 0 0;
-}
-.main-header .logo img{
-    height: 45px;
-}
 #banner .banner-content{
     width: 90%;
     padding: 20px 0 0;
@@ -349,15 +298,17 @@ ul{
 .banner-content p{
     font-size: 15px;
 }
+#banner .banner-content img{
+    width: 35%;
+}
 #Solutions{
-    padding: 30px 0 10px;
+    padding: 20px 0 0;
 }
 .section-title{
     margin: 0 0 15px;
 }
 .section-title p{
     font-size: 16px;
-    margin: 0 0 8px;
 }
 .section-title h2{
     font-size: 17px;
