@@ -39,6 +39,15 @@ ul{
 #particles-js{
     height: 100%;
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 /* ================================================ */
 
 /* ================================================ */
@@ -231,16 +240,6 @@ ul{
 /* 6.MEDIA QUERY
 =================================================== */
 @media only screen and (max-width: 991px){
-#Solutions{
-    padding: 50px 0 20px;
-}
-#Solutions .section-title h2{
-    margin: 0;
-}
-.section-title h2{
-    font-size: 30px;
-    line-height: 40px;
-}
 .banner-content h2{
     font-size: 50px;
     line-height: 40px;
@@ -248,18 +247,21 @@ ul{
 #banner .banner-content img{
     width: 30%;
 }
+.section-title h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+#Solutions{
+    padding: 50px 0 20px;
+}
+#Solutions .section-title h2{
+    margin: 0;
+}
 .solution-item.mb-0{
     margin: 0 0 30px;
 }
 }
 @media only screen and (max-width: 767px){
-#Solutions{
-    padding: 25px 0 0;
-}
-.solution-item,
-.solution-item.mb-0{
-    margin: 0 40px 25px;
-}
 #banner .banner-content{
     width: 90%;
     top: 60%;
@@ -283,6 +285,26 @@ ul{
     font-size: 25px;
     line-height: 33px;
 }
+#Solutions{
+    padding: 25px 0 0;
+}
+.solution-item,
+.solution-item.mb-0{
+    margin: 0 40px 25px;
+}
+.solution-img img{
+    height: 200px;
+}
+.solution-item .solution-description{
+    opacity: 1;
+}
+.solution-item:before{
+    opacity: 0.6;
+    transform: scale(1);
+}
+.solution-item:after{
+    opacity: 0.4;
+}
 }
 @media only screen and (max-width: 476px){
 #banner .banner-content{
@@ -305,6 +327,9 @@ ul{
 #Solutions{
     padding: 20px 0 0;
 }
+.solution-img img{
+    height: 170px;
+}
 .section-title{
     margin: 0 0 15px;
 }
@@ -320,13 +345,13 @@ ul{
     margin: 0 0 20px;
 }
 .solution-description .title{
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
     margin: 0 0 3px;
 }
 .solution-description p{
     font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
 }
 #footer{
     padding: 10px 0;
@@ -339,4 +364,3 @@ ul{
 }
 }
 /* ================================================ */
-@2020 copyright Evigtech Pvt. Ltd.
