@@ -58,7 +58,7 @@ body {
   margin-bottom: 30px;
 }
 
-header {
+.video-container {
   position: relative;
   background-color: black;
   height: 75vh;
